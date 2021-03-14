@@ -15,7 +15,8 @@ set -e
 
 home_dir=$(echo ~)
 current_dir=$(pwd)
-build_dir="$current_dir/.pio/build/esp-wrover-kit"
+board=${1}
+build_dir="$current_dir/.pio/build/$board"
 
 bootloader="$home_dir/.platformio/packages/framework-arduinoespressif32/tools/sdk/bin/bootloader_dio_40m.bin"
 partitions="$build_dir/partitions.bin"
