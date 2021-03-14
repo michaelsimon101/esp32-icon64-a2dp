@@ -93,11 +93,11 @@ bool hasDevicePlayedAudio = false;
 
 uint8_t getLedIndex(uint8_t x, uint8_t y) {
   //x = 7 - x;
-  if (y % 2 == 0) {
-    return y * 8 + x;
-  } else {
+  //if (y % 2 == 0) {
+    //return y * 8 + x;
+  //} else {
     return y*8 + (7 - x);
-  }
+  //}
 }
 
 void createBands(int i, int dsize) {
